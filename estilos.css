@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  background-color: #177add;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.banner {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+.banner-img {
+  width: 200px;          /* Tamaño de la imagen */
+  height: auto;
+  border-radius: 10px;   /* Bordes redondeados opcionales */
+  margin-right: 20px;    /* Espacio entre imagen y texto */
+
+}
+
+.banner-texto h1 {
+  margin: 0;
+  font-size: 28px;
+  }
+  .banner-texto p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+section {
+  background-color: white;          /* Fondo blanco para destacar cada bloque */
+  border-radius: 8px;               /* Bordes redondeados */
+  padding: 20px;                    /* Espaciado interno */
+  margin-bottom: 20px;              /* Separación entre secciones */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra suave */
+}
+.sobre-mi {
+  margin-top: 30px; /* 👈 Espacio entre el banner y la sección */
+}
+
+section h2 {
+  color: #0055aa;                   /* Color azul para títulos */
+  margin-bottom: 15px;              /* Espacio debajo del título */
+  font-size: 22px;                  /* Tamaño de los títulos */
+  border-bottom: 2px solid #0055aa; /* Línea decorativa debajo del título */
+  display: inline-block;            /* Permite aplicar la línea solo al texto */
+  padding-bottom: 5px;              /* Espacio entre texto y línea */
+}
+
+section ul {
+  list-style-type: square;          /* Viñetas cuadradas */
+  padding-left: 20px;               /* Indentación */
+}
+section ul li {
+  margin-bottom: 5px;              /* Espacio entre elementos de la lista */
+}
+
+/* === Sección de contacto === */
+.contacto a {
+  color: #0055aa;                   /* Color de los enlaces */
+  text-decoration: none;            /* Quita el subrayado */
+  font-weight: bold;                /* Texto en negrita */
+}
+
+.contacto a:hover {
+  text-decoration: underline;       /* Subraya al pasar el mouse */
+}
+
+/* 📱 Estilos para pantallas de 768px o menos (celulares/tablets) */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column; /* Imagen y texto uno encima del otro */
+    text-align: center;
+  }
+
+  .banner-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  section {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
